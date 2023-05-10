@@ -75,9 +75,9 @@ const config = {
             position: 'right',
           },
         ],
+        
       },
       footer: {
-        style: 'dark',
         links: [
           {
             title: 'Docs',
@@ -119,12 +119,21 @@ const config = {
             ],
           },
         ],
+        // 這行註解掉才可以調整footerbar樣式
+        style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        // darkTheme: require('prism-react-renderer/themes/github'),
       },
+      // 設定預設樣式
+      // colorMode: {
+      //   defaultMode: 'dark',
+      //   disableSwitch: false,
+      //   respectPrefersColorScheme: false,
+      // },      
     }),
 };
 
