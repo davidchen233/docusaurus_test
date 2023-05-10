@@ -1,20 +1,31 @@
 # Website
 
-This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
+This website is built using [Docusaurus 2](https://docusaurus.io/)
 
-### Installation
+### 🛠️ Installation
 
 ```
 $ yarn
 ```
 
-### Local Development
+### 🖥️ Local Development
 
 ```
 $ yarn start
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
+### 🧬 Branching
+
+1. Add feature branch from `main`
+
+   ```bash
+   feature/<task_number>_<task_name>
+   ```
+
+2. Merge from `feature` to `develop` to test
+3. Merge `feature` to `main`
+
+============ Add on after deployment ==============
 
 ### Build
 
