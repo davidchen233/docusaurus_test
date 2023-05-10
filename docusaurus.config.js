@@ -133,7 +133,20 @@ const config = {
       //   defaultMode: 'dark',
       //   disableSwitch: false,
       //   respectPrefersColorScheme: false,
-      // },      
+      // },
+      /**
+       *  ?TODO：目前研究結果。搜尋引擎需等build完取得sitemap後，才能將索引資料傳至algolia
+       * */
+      algolia: {
+        appId: '8ZEJUY8QUY',
+        apiKey: '27774d33ab2ee31af8adf90bf9d731bc',
+        indexName: 'LION_docusarus_test',
+        contextualSearch: true,
+        replaceSearchResultPathname: {
+          from: '/docs/', // 也可使用正規表達式: /\/docs\//
+          to: '/',
+        },
+      },
     }),
 };
 
