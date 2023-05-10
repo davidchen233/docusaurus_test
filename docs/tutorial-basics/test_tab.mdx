@@ -1,0 +1,33 @@
+<TabsComponent
+  tabValArr={[
+    {
+      value: "npm",
+      label: "npm",
+      language: "powershall",
+      mdx: `cd my-website
+npm run start`,
+    },
+    {
+      value: "yarn",
+      label: "yarn",
+      language: "powershall",
+      mdx: `cd my-website
+yarn run start`,
+    },
+    {
+      value: "pnpm",
+      label: "pnpm",
+      language: "powershall",
+      mdx: `cd my-website
+pnpm run start`,
+    },
+  ]}
+/>
+
+```jsx live noInline
+const project = 'Docusaurus';
+
+const Greeting = () => <p>Hello {project}!</p>;
+
+render(<Greeting />);
+```
