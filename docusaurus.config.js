@@ -11,10 +11,21 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  /**
+   * -根網域設定
+   * 此處須設定為網域名稱
+   */
+  url: 'https://siaoheiblack.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  /**
+   * -根路徑設定
+   * 如果Deploy到GitHubPage
+   * 須將此處改為Repo的名稱
+   * 如未來會直接上線到網站
+   * 則要把此處改為"/"
+   */
+  baseUrl: '/docusaurus_test/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
