@@ -142,10 +142,10 @@ const config = {
         apiKey: '27774d33ab2ee31af8adf90bf9d731bc',
         indexName: 'LION_docusarus_test',
         contextualSearch: true,
-        replaceSearchResultPathname: {
-          from: '/docs/', // 也可使用正規表達式: /\/docs\//
-          to: '/',
-        },
+        // replaceSearchResultPathname: {
+        //   from: '/docs/', // 也可使用正規表達式: /\/docs\//
+        //   to: '/',
+        // },
       },
     }),
 };
