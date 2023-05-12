@@ -15,7 +15,7 @@ const config = {
    * -根網域設定
    * 此處須設定為網域名稱
    */
-  url: 'https://siaoheiblack.github.io/',
+  url: 'https://your-docusaurus-test-site.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   /**
@@ -25,7 +25,7 @@ const config = {
    * 如未來會直接上線到網站
    * 則要把此處改為"/"
    */
-  baseUrl: '/docusaurus_test/',
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
