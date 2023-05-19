@@ -11,10 +11,21 @@ const config = {
   favicon: "img/logo.png",
 
   // Set the production url of your site here
-  url: "https://your-docusaurus-test-site.com",
+  /**
+   * -根網域設定
+   * 此處須設定為網域名稱
+   */
+  url: 'https://your-docusaurus-test-site.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  /**
+   * -根路徑設定
+   * 如果Deploy到GitHubPage
+   * 須將此處改為Repo的名稱
+   * 如未來會直接上線到網站
+   * 則要把此處改為"/"
+   */
+  baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -118,6 +129,19 @@ const config = {
       //   disableSwitch: false,
       //   respectPrefersColorScheme: false,
       // },
+      /**
+       *  ?TODO：目前研究結果。搜尋引擎需等build完取得sitemap後，才能將索引資料傳至algolia
+       * */
+      algolia: {
+        appId: '8ZEJUY8QUY',
+        apiKey: '27774d33ab2ee31af8adf90bf9d731bc',
+        indexName: 'LION_docusarus_test',
+        contextualSearch: true,
+        // replaceSearchResultPathname: {
+        //   from: '/docs/', // 也可使用正規表達式: /\/docs\//
+        //   to: '/',
+        // },
+      },
     }),
 };
 
